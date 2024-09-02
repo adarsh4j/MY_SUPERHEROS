@@ -1,0 +1,72 @@
+h2{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    opacity: 3.5;
+}
+.highlight {
+    color: #0c0403; /* Change this to your desired color (e.g., Tomato) */
+  }
+  .highlight1 {
+    color: #4d43df; /* Change this to your desired color (e.g., Tomato) */
+  }
+  .highlight2 {
+    color: #ee3838; /* Change this to your desired color (e.g., Tomato) */
+  }
+.card img{
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.cardContainer {
+    position: relative; /* Establish a positioning context for the pseudo-element */
+    display: flex;          /* Use flexbox layout */
+    gap: 154px;  
+  }
+  
+  body {
+    content: "";  /* Required for pseudo-element to work */
+    position: absolute; /* Position it absolutely to cover the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../public/dc1.jpg); /* Background image URL */
+    background-size: cover; /* Ensures the background image covers the entire element */
+/* Centers the background image */
+    z-index: -1; /* Ensures the background image stays behind the content */
+  }
+.card{
+    padding: 20px;
+    margin: 10px;
+    background-color: black;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(63, 55, 55);
+    max-width: 250px;
+    display: inline-block;
+    margin-bottom: 13px;
+}
+.button{
+   text-align: center;
+}
+.supermanCard{
+  background-color: rgb(88, 88, 232);
+  color: rgb(255, 255, 255);
+}
+.flashCard{
+
+    background-color: rgb(230, 49, 49);
+    color: rgb(255, 255, 255);
+  }
+    /* h3{
+    text-align: center;
+    color: white;
+}
+p{
+    color: white;
+} */
