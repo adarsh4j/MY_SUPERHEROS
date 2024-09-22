@@ -1,3 +1,8 @@
+.contenet{
+  align-items: center;
+}
+
+
 h2{
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -6,7 +11,7 @@ h2{
     opacity: 3.5;
 }
 .highlight {
-    color: #0c0403; /* Change this to your desired color (e.g., Tomato) */
+    color: #2ef738; /* Change this to your desired color (e.g., Tomato) */
   }
   .highlight1 {
     color: #4d43df; /* Change this to your desired color (e.g., Tomato) */
@@ -21,38 +26,45 @@ h2{
     margin-bottom: 10px;
 }
 .cardContainer {
+    align-items: center;
     position: relative; /* Establish a positioning context for the pseudo-element */
-    display: flex;          /* Use flexbox layout */
-    gap: 154px;  
+    display: block;          /* Use flexbox layout */
+    gap: 184px;  
   }
   
   body {
     content: "";  /* Required for pseudo-element to work */
-    position: absolute; /* Position it absolutely to cover the container */
+    position: relative; /* Position it absolutely to cover the container */
     top: 0;
     left: 0;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
+    background-size: cover; 
     background-image: url(../../public/dc1.jpg); /* Background image URL */
-    background-size: cover; /* Ensures the background image covers the entire element */
-/* Centers the background image */
+    background-repeat: no-repeat;
     z-index: -1; /* Ensures the background image stays behind the content */
   }
 .card{
     padding: 20px;
     margin: 10px;
     background-color: black;
-    border: 2px solid black;
+    border: 3px solid rgb(54, 53, 53);
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 5px 5px 5px rgb(63, 55, 55);
-    max-width: 250px;
+    max-width: 230px;
     display: inline-block;
     margin-bottom: 13px;
 }
 .button{
-   text-align: center;
+  font-size: 32px;
+  
 }
 .supermanCard{
   background-color: rgb(88, 88, 232);
@@ -63,10 +75,35 @@ h2{
     background-color: rgb(230, 49, 49);
     color: rgb(255, 255, 255);
   }
-    /* h3{
+  .cyborgCard{
+
+    background-color: rgb(164, 145, 145);
+    color: rgb(0, 0, 0);
+  }
+  .button3{
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    color: white;
-}
-p{
-    color: white;
-} */
+
+  }
+  .button2{
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+  }
+  .button1{
+   
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+  }
+  .videoBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire screen */
+    z-index: -1; /* Places the video behind other content */
+  }
